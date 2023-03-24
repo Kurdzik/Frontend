@@ -47,7 +47,7 @@ pipeline {
                 }
             }
         }
-         stage('applicationImage to Artifactory') {
+         stage('Push Image to Artifactory') {
             steps {
                 script {
                     docker.withRegistry("$dockerRegistry", "$registryCredentials"){
